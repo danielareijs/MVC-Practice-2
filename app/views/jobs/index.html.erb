@@ -1,0 +1,14 @@
+<% @jobs.each do |job|%>
+<h3><%= job.job_title %></h3>
+<h4><%= job.job_description %></h4>
+<br>
+<h4><%= job.employer_name %></h4>
+<p><%= job.employer_description %></p>
+<p><%= job.industry %></p>
+<h4> Qualifications </h4>
+<p>Years of experience: <%= job.year_of_experience %></p>
+<p>Education Requirement: <%= job.education_requirement %></p>
+<p>Salary: <%= job.base_salary %></p>
+<br>
+<hr>
+<% end %>
